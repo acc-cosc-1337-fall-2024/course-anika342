@@ -1,30 +1,32 @@
 //write include statement for decisions header
 #include "decisions.h"
 #include <string>
+#include "decisions.h"
+#include <string>
 
 //Write code for function(s) code here
-
-string get_letter_grade_using_if(int numberGgrade)
+using std::string;
+string get_letter_grade_using_if(int numberGrade)
     {
         string letterGrade;
 
-        if (numberGgrade >= 90 && numberGgrade <= 100)
+        if (numberGrade >= 90 && numberGrade <= 100)
         {
             letterGrade = "A";
         } 
-        else if (numberGgrade >= 80 && numberGgrade < 90) 
+        else if (numberGrade >= 80 && numberGrade < 90) 
         {
             letterGrade = "B";
         }   
-        else if (numberGgrade >= 70 && numberGgrade < 80) 
+        else if (numberGrade >= 70 && numberGrade < 80) 
         {
             letterGrade = "C";
         } 
-        else if (numberGgrade >= 60 && numberGgrade < 70) 
+        else if (numberGrade >= 60 && numberGrade < 70) 
         {
             letterGrade = "D";
         } 
-        else if (numberGgrade >= 0 && numberGgrade < 60) 
+        else if (numberGrade >= 0 && numberGrade < 60) 
         {
             letterGrade = "F";
         }
@@ -32,10 +34,10 @@ string get_letter_grade_using_if(int numberGgrade)
 
     }
 
-string get_letter_grade_using_switch(int numberGgrade)
+string get_letter_grade_using_switch(int numberGrade)
     {
         string letterGrade;
-        switch (numberGgrade / 10) {
+        switch (numberGrade / 10) {
             case 10:
             case 9:
                 letterGrade = "A";
