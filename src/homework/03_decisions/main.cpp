@@ -1,41 +1,35 @@
 //write include statements
-#include "decisions.h"
 #include <iostream>
+#include <math.h>
 
-using namespace std;
+using name space std
 
-int main() 
+int main ()
 {
-	int numberGrade;
-	string letterGrade;
-	int menuSelection;
 
-	cout << "	        MAIN MENU" << endl;
-	cout << "1-Letter grade using if" << endl;
-	cout << "2-Letter grade using switch" << endl;
-	cout << "3-Exit" << endl;
-	cin >> menuSelection;
-	if (menuSelection==1 || menuSelection==2)
-	{
-		cout << "Please enter a grade between 0 and 100:" << endl;
-		cin >> numberGrade;
-	}
-	if (numberGrade>=0 && numberGrade<=100 && menuSelection==1)
-	{
-		letterGrade = get_letter_grade_using_if(numberGrade);
-	}
-	else if (numberGrade>=0 && numberGrade<=100 && menuSelection==2)
-	{
-		letterGrade = get_letter_grade_using_switch(numberGrade);
-	}
-	else
-	{
-		cout << "The number is out of range!"
-		letterGrade = "invalid"
-	}
-	
-	cout << "The letter grade is " << letterGrade << endl;
-	
+int numerical_Grade;
+char letter_Grade;
 
+cout<<"Welcome to my program";
+cout<<"Conversion table";
+
+if (numerical_Grade )
+
+Else if ()
+{
+
+}
+
+
+}
+
+Switch (numerical_Grade)
+
+{
+    Case 1:
+    cout<<"The student grade is: ";
+    
+    break;
+}
 	return 0;
 }
