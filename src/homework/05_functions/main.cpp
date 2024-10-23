@@ -1,4 +1,4 @@
-#include "func.cpp"
+#include "func.h"
 #include <iostream>
 #include <string>
 
