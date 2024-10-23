@@ -37,7 +37,7 @@ std::string get_dna_complement(string dna)
             reversedDNA[i]='T';
             std::cout << "Reversing A to T" << std::endl;
             std::cout << "updated char:" << reversedDNA[i] << std::endl;
-            my_str.at(i)
+            
         }
         else if(reversedDNA[i]=='T')
         {
