@@ -1,6 +1,6 @@
 //write include statements
 //2#include "repetition.h"
-#include "repetition.cpp"
+#include "repetition.h"
 #include <iostream>
 #include <string>
 //write using statements
@@ -44,7 +44,7 @@ int main()
 			}
 			else
 			{
-				menuSelection == 1;
+				menuSelection = 1;
 			}
 		}
 		
