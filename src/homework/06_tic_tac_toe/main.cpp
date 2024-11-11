@@ -28,6 +28,14 @@ int main()
 
 			
 		}
+		if (game.get_winner()=="C")
+		{
+			cout<<"This game is a tie!"<<std::endl;
+		}
+		else
+		{
+			cout<<"Winner of the game is: "<<game.get_winner()<<std::endl;
+		}
 		cout<<"play again enter y or Y? ";
 		cin>>user_choice;
 
