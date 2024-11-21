@@ -1,11 +1,14 @@
 #include "tic_tac_toe.h"
+#include "tic_tac_toe_manager.h"
 #include <iostream>
 #include <string>
 
 using std::cout; using std::cin; using std::string;
 int main() 
 {
+	//In main.cpp create an instance of TicTacToManager, after each complete game add the TicTacToe game instance to the TicTacToeManager.
 
+	TicTacToeManager manager;
 	TicTacToe game;
 	string first_player;
 	char user_choice = 'y';
@@ -36,6 +39,11 @@ int main()
 		{
 			cout<<"Winner of the game is: "<<game.get_winner()<<std::endl;
 		}
+		//after each complete game add the TicTacToe game instance to the TicTacToeManager
+		manager.save_game(game);
+		
+		//Display the running score
+		
 		cout<<"play again enter y or Y? ";
 		cin>>user_choice;
 
